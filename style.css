@@ -16,7 +16,7 @@
     --fonte3: 'Sriracha', cursive;
 }
 
-body{
+body, html{
     min-height: 100vh;
     background-color: darkgrey;
     font-family: var(--fonte1);
@@ -30,42 +30,54 @@ header{
 
 header > h1 {
     padding-top: 50px;
-    font-variant: small-caps;
+    font-variant: small-caps; /*Todas as letras em maiúscula porém as iniciais são maiores*/
     font-family: var(--fonte2);
     font-size: 10vw;
     
 }
 
 header > p {
-    padding-bottom: 40px;
+    padding-bottom: 50px;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 section {
-    padding: 70px 20px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     font-family: var(--fonte3);
-    font-size: 3em;
+    font-size: 3.5vw;
+    line-height: 2em; /*LINE-HEIGHT: espaçamento entre linhas */
+    padding-left: 30px;
 }
 
-section.image > p {
-    background-color: rgba(0, 0, 0, 0.535);
-    width: 580px;
-    padding: 20px 20px
+section.text {
+    background-color: white;
+    color: black;
 }
 
 section.image {
+    background-color: rgb(70, 70, 70);
     color: aliceblue;
 }
 
-.image#img01 {
-    background-image: url(imagens/background001.jpg);
-}
-
-.image#img02 {
-    background-image: url(imagens/background002.jpg);
+section.image > p {
+    display: inline-block; /*tamanho da div se adapta a tela*/
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.526);
 }
 
 footer{
     background-color: black;
     color: aliceblue;
     text-align: center;
+    padding: 10px;
 }
