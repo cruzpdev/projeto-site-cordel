@@ -59,6 +59,10 @@ section {
     padding-left: 30px;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 section.text {
     background-color: white;
     color: black;
@@ -67,12 +71,29 @@ section.text {
 section.image {
     background-color: rgb(70, 70, 70);
     color: aliceblue;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.541); /*sombra pra dentro*/
+    background-size: cover;
+    background-attachment: fixed; /*com as imagens pequenas e aparecendo 100% nas
+    divs, o bg-attachment: fixed serve pra no rolamento as imagens ficarem paradas, causando o efeito paralaxe*/
 }
 
 section.image > p {
     display: inline-block; /*tamanho da div se adapta a tela*/
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.526);
+    text-shadow: 1px 1px 0px black; /*vertical lateral espalhamento e cor*/
+}
+
+.image#img01 {
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    
+}
+
+.image#img02 {
+    background-image: url('imagens/background002.jpg');
+    background-position: right ;
+    
 }
 
 footer{
